@@ -5,22 +5,7 @@ package LinkedList;
 //        Input: list1 = [1,2,4], list2 = [1,3,4]
 //        Output: [1,1,2,3,4,4]
 public class MergeTwoSortedLists {
-     static class ListNode {
-        int val;
-        ListNode next;
 
-        ListNode() {
-        }
-
-        ListNode(int val) {
-            this.val = val;
-        }
-
-        ListNode(int val, ListNode next) {
-            this.val = val;
-            this.next = next;
-        }
- }
     public static ListNode mergeTwoLists(ListNode list1, ListNode list2) {
         ListNode current = new ListNode(-1);
         ListNode result = current;
