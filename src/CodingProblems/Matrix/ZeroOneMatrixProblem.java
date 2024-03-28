@@ -7,7 +7,7 @@ public class ZeroOneMatrixProblem {
 //    To solve this problem, we can use a breadth-first search (BFS) approach. The idea is to start from each cell containing 0 and traverse the matrix to find the nearest 0 for each cell containing 1.
 //    Here's the step-by-step explanation of the solution:
 //    Initialization: Initialize a queue to perform BFS. Enqueue all cells containing 0 into the queue.
-//    BFS Traversal: While the queue is not empty, dequeue a cell and explore its neighbors. For each neighbor cell:
+//    BFS Traversal: While th  e queue is not empty, dequeue a cell and explore its neighbors. For each neighbor cell:
 //    If the neighbor cell is within the matrix bounds and its value is not yet updated (indicating it hasn't been visited), update its value to be the minimum of its current value and the distance to the current cell plus 1. Enqueue the neighbor cell into the queue.
 //    Final Result: After BFS traversal, the values in the matrix will represent the distance of each cell to the nearest 0.
     public int[][] updateMatrix(int[][] mat) {
