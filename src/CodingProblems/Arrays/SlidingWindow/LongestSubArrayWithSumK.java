@@ -1,4 +1,4 @@
-package Arrays;
+package Arrays.SlidingWindow;
 
 public class LongestSubArrayWithSumK {
     public static int longestSubarrayWithSumK(int []a, long k) {

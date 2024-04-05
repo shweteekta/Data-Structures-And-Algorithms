@@ -1,3 +1,5 @@
+package GraphBacktracking;
+
 public class NQueensProblem {
 
     private int[][] chessTable;

@@ -1,3 +1,5 @@
+package GraphBacktracking;
+
 public class WordSearchProblem {
     public boolean exist(char[][] board, String word) {
         int m = board.length;

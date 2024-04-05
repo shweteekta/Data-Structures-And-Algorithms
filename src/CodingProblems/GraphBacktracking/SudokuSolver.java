@@ -1,3 +1,5 @@
+package GraphBacktracking;
+
 public class SudokuSolver {
     private static final int BOARD_SIZE = 9;
     private static final int MIN_NUMBER = 1;

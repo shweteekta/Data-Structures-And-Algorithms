@@ -1,3 +1,5 @@
+package GraphBacktracking;
+
 public class KnightsTour {
     private static final int N = 8; // The size of the chessboard
     private static final int[][] moves = {{2, 1}, {1, 2}, {-1, -2}, {-2, -1}, {-2, 1}, {-1, 2}, {1, -2}, {2, -1}};

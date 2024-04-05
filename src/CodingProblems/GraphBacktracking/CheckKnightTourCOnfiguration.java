@@ -1,3 +1,5 @@
+package GraphBacktracking;
+
 public class CheckKnightTourCOnfiguration {
     private static final int[][] moves = {{2, 1}, {1, 2}, {-1, -2}, {-2, -1}, {-2, 1}, {-1, 2}, {1, -2},
             {2, -1}};

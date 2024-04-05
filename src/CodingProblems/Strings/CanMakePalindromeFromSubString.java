@@ -2,7 +2,7 @@ package Strings;
 
 import java.util.*;
 
-public class CanMakePalindromeFromSubString {
+public class               CanMakePalindromeFromSubString {
     public class Solution {
         public List<Boolean> canMakePaliQueries(String s, int[][] queries) {
             List<Boolean> result = new ArrayList<>();
