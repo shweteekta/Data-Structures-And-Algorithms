@@ -18,7 +18,7 @@ import java.util.*;
 //        ()()
 public class BalancedParenthesis {
     public static void main(String[] args){
-        int n = 4;
+        int n = 3;
         System.out.println(getBalancedParenthesis(n));
     }
 
