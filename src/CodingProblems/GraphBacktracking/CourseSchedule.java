@@ -12,22 +12,22 @@ public class CourseSchedule {
 //    Output: true
 //    Explanation: There are a total of 2 courses to take.
 //    To take course 1 you should have finished course 0. So it is possible.
-public boolean canFinish(int numCourses, int[][] prerequisites) {
-    Map<Integer, List<Integer>> list = new HashMap<>();
-    for (int[] edges : prerequisites) {
-        list.put(edges[0], list.getOrDefault(edges[0], new ArrayList<>()));
-        list.get(edges[0]).add(edges[1]);
-    }
-    boolean[] visited = new boolean[numCourses];
-    boolean[] neighborVisit = new boolean[numCourses];
-    for (int i = 0; i < numCourses; i++) {
-        if (!visited[i]) {
-            if (dfs(i, list, visited, neighborVisit))
-                return false;
+    public boolean canFinish(int numCourses, int[][] prerequisites) {
+        Map<Integer, List<Integer>> list = new HashMap<>();
+        for (int[] edges : prerequisites) {
+            list.put(edges[0], list.getOrDefault(edges[0], new ArrayList<>()));
+            list.get(edges[0]).add(edges[1]);
         }
+        boolean[] visited = new boolean[numCourses];
+        boolean[] neighborVisit = new boolean[numCourses];
+        for (int i = 0; i < numCourses; i++) {
+            if (!visited[i]) {
+                if (dfs(i, list, visited, neighborVisit))
+                    return false;
+            }
+        }
+        return true;
     }
-    return true;
-}
 
     private boolean dfs(int vertex, Map<Integer, List<Integer>> list, boolean[] visited, boolean[] neighborVisit) {
         visited[vertex] = true;
